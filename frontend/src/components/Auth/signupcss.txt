@@ -1,0 +1,158 @@
+Base styles
+.signupContainer {
+  display: flex;
+  justify-content: center; /* Center the container on small screens */
+  align-items: center;
+  height: 90vh;
+  background-color: #f4f4f4;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-left: 20px; /* Keeps some spacing from the left on larger screens */
+  padding-right: 20px; /* Keeps some spacing from the right on larger screens */
+}
+
+@media (min-width: 768px) {
+  .signupContainer {
+    justify-content: flex-start; /* Aligns to the left on larger screens */
+  }
+}
+
+.loginContainer {
+  width: 100%;
+  max-width: 450px; /* Restricting the width to make it look consistent */
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gifImage {
+  width: 30px;
+  height: auto;
+}
+
+.headerText {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0078d4;
+  flex: 1; /* Ensures the header text takes full width */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Centers the form and buttons */
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Divider with OR in the center */
+.divider {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+  width: 100%;
+}
+
+.divider::before {
+  content: '';
+  display: block;
+  border-top: 1px solid #ddd;
+  flex-grow: 1; /* Ensures the line grows on both sides */
+  margin-right: 10px; /* Adds some spacing between the line and the "OR" */
+}
+
+.divider span {
+  display: inline-block;
+  padding: 0 10px; /* Adds some padding around the text */
+  background-color: #f4f4f4; /* Optional: Adds a background to make it stand out */
+}
+
+.orText {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.createAccountText {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Input fields and signup button styling */
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.inputBox input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%; /* Ensure inputs take full width */
+}
+
+.signupBtn {
+  background-color: #0078d4;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%; /* Button should also take full width */
+}
+
+.toggleBtn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  color: #0078d4;
+  background: none;
+  border: none;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

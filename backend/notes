@@ -1,0 +1,13 @@
+python -m venv myenv => make env
+
+or 
+python3 -m venv myenv
+
+
+myenv\Scripts\activate => to activate
+
+deactivate => to deactivate
+
+
+
+uvicorn app.main:app --reload --port 8000 => to start the application

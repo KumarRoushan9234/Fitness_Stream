@@ -1,0 +1,115 @@
+/* Base styles */
+.signupContainer {
+  display: flex;
+  justify-content: space-between; /* Space between form and slider */
+  align-items: center;
+  height: 90vh;
+  background-color: #f4f4f4;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.formContainer {
+  width: 48%; /* Take up half of the space for the form */
+  max-width: 450px;
+}
+
+.sliderContainer {
+  width: 48%; /* Take up half of the space for the slider */
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .signupContainer {
+    flex-direction: column; /* Stack form and slider on small screens */
+    align-items: center;
+  }
+
+  .formContainer, .sliderContainer {
+    width: 90%; /* Take up most of the screen width on small screens */
+    max-width: none;
+    margin-bottom: 20px;
+  }
+}
+
+/* Form styling */
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.createAccountText {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.inputBox input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.signupBtn {
+  background-color: #0078d4;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.toggleBtn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  color: #0078d4;
+  background: none;
+  border: none;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

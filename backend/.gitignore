@@ -1,0 +1,7 @@
+.env
+/venv/
+/env
+*.pyc
+__pycache__/
+**/__pycache__/
+# to ignore all the __pycache__ directories
